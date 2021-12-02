@@ -1,0 +1,218 @@
+:root{
+    --light-blue: #B1EEF2;
+    --backgorund-blue: #050817;
+    --light-font-gray: #E4D9D9;
+    --background-gray: #E2E2E2;
+    --yellow-fonts: #FAF200;
+    --purple-dark-title: #24041B;
+    --dark-grey-font: #353333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: .625rem;
+    font-family: 'Play', sans-serif;
+}
+
+body{
+    background: var(--background-gray);
+}
+
+.hero{
+    width: 100vw;
+    height: auto;
+    background: #050817;
+    color: var(--light-font-gray);
+    position: relative;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.hero .burguer-button{
+    position: absolute;
+    width:34px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    top: 26px;
+    left: 23px;
+    justify-content: space-between;
+}
+
+.hero .line-button{
+    width: 100%;
+    height: 5px;
+    background: var(--light-blue);
+    border-radius: 3px;
+}
+
+.hero .title-developer{
+    font-size: 2.4rem;
+    color: var(--yellow-fonts);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.hero .title__advice{
+    font-size: 1.6rem;
+    color: var(--light-blue);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 9px;
+    max-width: 191px;
+}
+
+.hero .background-photo{
+    position: relative;
+    width: 320px;
+    top: -7.5rem;
+}
+
+.hero .title__description{
+    position: absolute;
+    font-size: 2rem;
+    width: 288px;
+    text-align: left;
+    left: calc( 50% - 144px );
+    top: 397px;
+    line-height: 23px;
+}
+
+main{
+    width: 100%;
+    background-color: var(--background-gray);
+}
+
+.job__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job__description-title{
+    color: var(--purple-dark-title);
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding-top: 2rem;
+    max-width: 90%;
+    margin: 0;
+}
+
+.job__description .job__description-image{
+    width: 170px;
+    height: 170px;
+    margin: 2rem auto;
+}
+
+.job__description p{
+    font-size: 1.6rem;
+    color: var(--dark-grey-font);
+    width: 90%;
+}
+
+.experience__description .target__experience{
+    max-width: 288px;
+    width: 90%;
+    height: 311px;
+    margin: 0 auto;
+    background-image: url('./assets/images/thinkigrow-image.jpg');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.experience__description .batata-bip{
+    background-image: url('./assets/images/batata-bip.jpg');
+}
+
+.experience{
+    justify-self: center;
+    margin: 1rem auto;
+}
+
+.experience__description-layout{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+    background: var(--backgorund-blue);
+    padding: 1.6rem;
+}
+
+.experience__description-layout h1{
+    font-size: 2rem;
+    color:var(--yellow-fonts);
+    font-weight: 700;
+}
+
+.experience__description-layout p{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    margin:.8rem 0;
+}
+
+.experience__description-layout h3{
+    color:var(--yellow-fonts);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.knowledge__icons{
+    display: inline-flex;
+    height: 28px;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.experience__description-layout .knowledge__icon-tag{
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    padding-right: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.experience__description-layout .react-icon{
+    background-image: url('./assets/icons/react-icon.svg');
+}
+
+.experience__description-layout .figma-icon{
+    background-image: url('./assets/icons/figma-icon.svg');
+}
+
+.experience__description-layout .design-thinking-icon{
+    background-image: url('./assets/icons/designthinking-icon.svg');
+}
+
+.experience__description-layout .html-css-icon{
+    background-image: url('./assets/icons/html-css-icon.svg');
+}
+
+.experience__description-layout .css-icon{
+    background-image: url('./assets/icons/css-icon.svg');
+}
+
+.batata-icons{
+    width: 30%;
+}
+
+.knowledge__section{
+    width: 100%;
+    background: #D4D3D3;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
