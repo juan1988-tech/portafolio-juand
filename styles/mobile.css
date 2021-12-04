@@ -1,11 +1,12 @@
 :root{
     --light-blue: #B1EEF2;
-    --backgorund-blue: #050817;
+    --background-blue: #050817;
     --light-font-gray: #E4D9D9;
     --background-gray: #E2E2E2;
     --yellow-fonts: #FAF200;
     --purple-dark-title: #24041B;
     --dark-grey-font: #353333;
+    --backgroun-blue-form: #090F2E;
 }
 
 *{
@@ -145,7 +146,7 @@ main{
     height: 55%;
     position: absolute;
     bottom: 0;
-    background: var(--backgorund-blue);
+    background: var(--background-blue);
     padding: 1.6rem;
 }
 
@@ -307,4 +308,169 @@ main{
     height: 1rem;
     background-size: 4.4rem 1rem;
     margin-left: .5rem;
+}
+
+.form__contact{
+    width: 100vw;
+    height: 37.8rem;
+    background-color: var(--backgroun-blue-form);
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.form__contact h1, footer h1{
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--yellow-fonts);
+}
+
+.form__contact .form__delay{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__contact label{
+    font-weight: 700;
+    font-size: 1.6rem;
+    width: 80%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form__contact span{
+    padding: 1rem 0;
+}
+
+.form__contact input, .input-message{
+    background:#1D275C;
+    border: none;
+    font-family: 'Play',sans-serif;
+    color: #fff;
+    font-weight: 400;
+    height: 20px;
+    justify-self: center;
+    padding: 1rem 0;
+}
+
+.form__contact input:visited
+, .input-message:visited{
+    background: #1D275C;
+}
+
+.form__contact .input-message{
+    height: 4rem;
+}
+
+.form__contact .form__button{
+    margin-top: 1.6rem;
+    background: none;
+    color: #fff;
+    padding: .8rem;
+    border: 1px solid #fff; 
+    border-radius: 1rem;
+    height: 4rem;
+    width: 176px;
+    align-self: flex-end;
+    /*margin-right: 3rem;*/
+    position: absolute;
+    right: 35px;
+    top: 300px;
+    font-family: 'Play',sans-serif;
+}
+
+footer{
+    width: 100vw;
+    height: 30.6rem;
+    background: var(--background-blue);
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1.6rem;
+}
+footer h1 + h2{
+    color:#1BD8F1;
+    width: 189px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.social__media-delay{
+    width: 184px;
+    height: 31px;
+    position: absolute;
+    left: calc( 50% - 92px );
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__media-delay span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.github__link{
+    background-image: url('./assets/icons/github-white-icon.svg');
+}
+
+.facebook__link{
+    background-image: url('./assets/icons/facebook-white-icon.svg');
+}
+
+.linkedin__link{
+    background-image: url('./assets/icons/linkedin-white-icon.svg');
+}
+
+.instagram__link{
+    background-image: url('./assets/icons/instagram-white-icon.svg');
+}
+
+.location__data{
+    margin-top: 90px;
+}
+
+.location__data p{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: left;
+    display: inline-flex;
+    align-items: center;
+}
+
+.location__data span{
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.location__data .cellphone__icon{
+    background-image: url('./assets/icons/cellphone-icon.svg'); 
+    height: 1.7rem;
+    width: 2.2rem;
+}
+
+.location__data .email__icon{
+    background-image: url('./assets/icons/email-icon.svg');
+    height: 2rem;
+    width: 2.3rem;
+}
+
+.location__data .location__icon{
+    background-image: url('./assets/icons/location-icon.svg');
+    height: 2.1rem;
+    width: 2.3rem;
 }
