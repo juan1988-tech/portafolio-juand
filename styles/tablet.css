@@ -24,20 +24,23 @@ body{
     background: var(--background-gray);
 }
 
+
 .hero{
     width: 100vw;
-    height: auto;
+    min-width: 426px;
+    height: 624px;
     background: #050817;
     color: var(--light-font-gray);
     position: relative;
     padding-top: 2rem;
     text-align: center;
+
 }
 
 .hero .burguer-button{
     position: absolute;
-    width:34px;
-    height: 22px;
+    width: 50px;
+    height: 33px;
     display: flex;
     flex-direction: column;
     top: 26px;
@@ -47,44 +50,50 @@ body{
 
 .hero .line-button{
     width: 100%;
-    height: 5px;
+    height: 6px;
     background: var(--light-blue);
     border-radius: 3px;
 }
 
 .hero .title-developer{
-    font-size: 2.4rem;
+    font-size: 4rem;
     color: var(--yellow-fonts);
     font-weight: 700;
     text-align: center;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 51px;
 }
 
 .hero .title__advice{
-    font-size: 1.6rem;
-    color: var(--light-blue);
+    font-size: 2rem;
+    color: #5CD7E8;
     font-weight: 700;
     text-align: center;
+    width: 234px;
+    height: 52px;
     margin: 0 auto;
     margin-top: 9px;
-    width: 191px;
+
 }
 
 .hero .background-photo{
     position: relative;
-    width: 320px;
-    top: -7.5rem;
+    width: 463px;
+    height: 433px;
+    left: 148px;
+    top: -79px;
 }
 
 .hero .title__description{
+    font-size: 3.2rem;
+    font-weight: 400;
     position: absolute;
-    font-size: 2rem;
-    width: 288px;
+    top: 312px;
+    left: 34px;
+    width: 374px;
+    height: 140px;
+    line-height: 37px;
     text-align: left;
-    left: calc( 50% - 144px );
-    top: 397px;
-    line-height: 23px;
 }
 
 main{
@@ -92,7 +101,15 @@ main{
     background-color: var(--background-gray);
 }
 
+.job__description-container{
+    width: 100vw;
+    height: 398px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .job__description{
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,24 +117,30 @@ main{
 
 .job__description-title{
     color: var(--purple-dark-title);
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.4rem;
-    padding-top: 2rem;
-    max-width: 90%;
-    margin: 0;
+    font-size: 32px;
+    margin: 1.6rem 0;
 }
 
 .job__description .job__description-image{
-    width: 170px;
-    height: 170px;
-    margin: 2rem auto;
+    margin: .5rem auto;
 }
 
 .job__description p{
+    margin-top: 1rem;
     font-size: 1.6rem;
-    color: var(--dark-grey-font);
-    width: 90%;
+    line-height: 1.9rem;
+    text-align: justify;
+    width: 100%;
+}
+
+.experience__delay{
+    width: 100vw;
+    height: 421px;
+    text-align: center;
+    display: grid;
+    grid-template: 60px 1fr/repeat(2, 1fr);
+    grid-template-areas: "title-experience title-experience"
+                         "experience-description-layout experience-description-layout";
 }
 
 .target__experience{
@@ -137,8 +160,35 @@ main{
 }
 
 .experience{
-    justify-self: center;
-    margin: 1rem auto;
+    grid-area: title-experience;
+}
+
+.experience__description-layout{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+    background: var(--background-blue);
+    padding: 1.6rem;
+}
+
+.experience__description-layout h1{
+    font-size: 2rem;
+    color:var(--yellow-fonts);
+    font-weight: 700;
+}
+
+.experience__description-layout p{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    margin:.8rem 0;
+}
+
+.experience__description-layout h3{
+    color:var(--yellow-fonts);
+    font-weight: 700;
+    font-size: 1.6rem;
 }
 
 .experience__description-layout{
@@ -212,11 +262,128 @@ main{
 .knowledge__section{
     width: 100%;
     background: #D4D3D3;
-    height: 288px;
+    height: 395px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+.knowledge__icons{
+    display: inline-flex;
+    height: 28px;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.experience__description-layout .knowledge__icon-tag{
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    padding-right: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.experience__description-layout .react-icon{
+    background-image: url('./assets/icons/react-icon.svg');
+}
+
+.experience__description-layout .figma-icon{
+    background-image: url('./assets/icons/figma-icon.svg');
+}
+
+.experience__description-layout .design-thinking-icon{
+    background-image: url('./assets/icons/designthinking-icon.svg');
+}
+
+.experience__description-layout .html-css-icon{
+    background-image: url('./assets/icons/html-css-icon.svg');
+}
+
+.experience__description-layout .css-icon{
+    background-image: url('./assets/icons/css-icon.svg');
+}
+
+.batata-icons{
+    width: 30%;
+}
+
+.experience__description-layout{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+    background: var(--background-blue);
+    padding: 1.6rem;
+}
+
+.experience__description-layout h1{
+    font-size: 2rem;
+    color:var(--yellow-fonts);
+    font-weight: 700;
+}
+
+.experience__description-layout p{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    margin:.8rem 0;
+}
+
+.experience__description-layout h3{
+    color:var(--yellow-fonts);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.knowledge__icons{
+    display: inline-flex;
+    height: 28px;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.experience__description-layout .knowledge__icon-tag{
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    padding-right: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.experience__description-layout .react-icon{
+    background-image: url('./assets/icons/react-icon.svg');
+}
+
+.experience__description-layout .figma-icon{
+    background-image: url('./assets/icons/figma-icon.svg');
+}
+
+.experience__description-layout .design-thinking-icon{
+    background-image: url('./assets/icons/designthinking-icon.svg');
+}
+
+.experience__description-layout .html-css-icon{
+    background-image: url('./assets/icons/html-css-icon.svg');
+}
+
+.experience__description-layout .css-icon{
+    background-image: url('./assets/icons/css-icon.svg');
+}
+
+.batata-icons{
+    width: 30%;
+}
+
+.knowledge__section{
+    background: #D4D3D3;
+    height: 160px;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .container__description-title{
@@ -233,15 +400,12 @@ main{
 }
 
 .knowledge__table{
-    width: 288px;
-    height: 288px;
+    height: 160px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 0 auto;
-    justify-content: center;
-    align-content: center;
-    grid-gap: .5rem;
+    grid-template-columns: repeat(9,1fr);
+    justify-content: space-around;
+    position: relative;
+    right: -29.5rem;
 }
 
 .knowledge__table-item,
@@ -252,12 +416,16 @@ main{
 .adobexd-logo-item,
 .figma-icon,
 .uxui-icon{
-    border-radius: 50%;
-    width: 80%;
-    height: 80%;
+    width: 150px;
+    height: 150px;
     background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position-x: center;
+    background-position-y: center;
     justify-self: center;
     align-self: center;
+    position: relative;
+    scroll-snap-align: center;
 }
 
 .react-icon-item{
@@ -329,7 +497,7 @@ main{
 
 .form__contact{
     width: 100vw;
-    height: 37.8rem;
+    height: 370px;
     background-color: var(--backgroun-blue-form);
     text-align: center;
     color: #fff;
@@ -346,19 +514,42 @@ main{
 .form__contact .form__delay{
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    padding: 2rem;
+    grid-gap: 2rem;
+    position: relative;
+    grid-template: repeat(4, 56px)/repeat(2, 1fr);
+    grid-template-areas: "name phone"
+                         "email email"
+                         "message message"
+                         ". button";
 }
 
 .form__contact label{
     font-weight: 700;
     font-size: 1.6rem;
-    width: 80%;
+    width: 100%;
     text-align: left;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
+.name{
+    grid-area: name;
+}
+
+.phone{
+    grid-area: phone;
+}
+
+.email{
+    grid-area: email;
+}
+
+.message{
+    grid-area: message;
+}
+
 
 .form__contact span{
     padding: 1rem 0;
@@ -394,11 +585,10 @@ main{
     height: 4rem;
     width: 176px;
     align-self: flex-end;
-    /*margin-right: 3rem;*/
-    position: absolute;
-    right: 35px;
-    top: 300px;
     font-family: 'Play',sans-serif;
+    position: absolute;
+    top: 246px;
+    left: 570px;
 }
 
 footer{
@@ -407,14 +597,23 @@ footer{
     background: var(--background-blue);
     text-align: center;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p {
     font-size: 1.6rem;
 }
+
+footer h1{
+    font-size: 3.2rem;
+    font-weight: 400;
+}
 footer h1 + h2{
     color:#1BD8F1;
-    width: 189px;
+    font-size: 2rem;
+    width: 298px;
     margin: 0 auto;
     position: relative;
 }
@@ -422,8 +621,7 @@ footer h1 + h2{
 .social__media-delay{
     width: 184px;
     height: 31px;
-    position: absolute;
-    left: calc( 50% - 92px );
+    margin: 0 auto;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
@@ -455,11 +653,12 @@ footer h1 + h2{
 }
 
 .location__data{
-    margin-top: 90px;
+    margin-top: 1rem;
+    width: 40%;
 }
 
 .location__data p{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 2rem;
     text-align: left;
@@ -476,8 +675,8 @@ footer h1 + h2{
 
 .location__data .cellphone__icon{
     background-image: url('./assets/icons/cellphone-icon.svg'); 
-    height: 1.7rem;
-    width: 2.2rem;
+    height: 2.3rem;
+    width: 2.7rem;
 }
 
 .location__data .email__icon{

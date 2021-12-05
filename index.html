@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/mobile.css" media="screen and (min-width: 320px) and (max-width: 425px)">
+    <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 426px) and (max-width: 768px)"/>
     <title>Juan David Franco</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
         <p class="title__description">Hola, soy Juan David Franco, creo aplicaciones web, y soy diseñador de interfaces</p>
     </section>
     <main>
-    <section>
+    <section class="job__description-container">
         <article class="job__description">
             <h1 class="job__description-title">Desarrollador web</h1>
             <img class="job__description-image" alt="foto-desarrollador" src="./styles/assets/images/photo-development.png"/>
@@ -35,9 +36,8 @@
             <p>Soy diseñador de interfaces, aplico los conocimientos de product design, design thinking y ux ui, para diseñar productos tecnológicos de vanguardia </p>
         </article>
     </section>
-    <section>
-        <article class="experience__description">
-            <h1 class="job__description-title experience">Experiencia y proyectos destacados</h1>
+    <section class="experience__delay">
+        <h1 class="job__description-title experience">Experiencia y proyectos destacados</h1>
             <a href="https://thinkigrow.com/" target="_blank">
                 <section class="target__experience">
                     <article class="experience__description-layout">
@@ -65,40 +65,44 @@
                     </article>
                 </section>
             </a>
-        </article>
-    </section>  
-    <section class="knowledge__section">
+    </section>
+    <div class="container__description-title">
         <h1 class="job__description-title">Conocimientos</h1>
-        <article class="knowledge__table">
-            <div class="knowledge__table-item react-icon-item"></div>
-            <div class="knowledge__table-item sass-icon-item"></div>
-            <div class="knowledge__table-item js-icon-item"></div>
-            <div class="knowledge__table-item github-icon-item"></div>
-            <div class="knowledge__table-item html-css-icon-item"></div>
-            <div class="knowledge__table-item adobexd-logo-item"></div>
-            <div class="knowledge__table-item figma-icon"></div>
-            <div class="knowledge__table-item design-thinking-icon"></div>
-            <div class="knowledge__table-item uxui-icon"></div>
-        </article>
+    </div>  
+    <section class="knowledge__section">
+            <div class="knowledge__table">
+                <div class="knowledge__table-item react-icon-item"></div>
+                <div class="knowledge__table-item sass-icon-item"></div>
+                <div class="knowledge__table-item js-icon-item"></div>
+                <div class="knowledge__table-item github-icon-item"></div>
+                <div class="knowledge__table-item html-css-icon-item"></div>
+                <div class="knowledge__table-item adobexd-logo-item"></div>
+                <div class="knowledge__table-item figma-icon"></div>
+                <div class="knowledge__table-item design-thinking-icon"></div>
+                <div class="knowledge__table-item uxui-icon"></div>
+            </div>
+    </section>
+    <div class="profile__student-container">
         <a href="https://platzi.com/p/jfranco1988/" target="_blank"
-        class="learning__profile">Ver perfil completo de aprendizaje  <span></span></a>
+            class="learning__profile">Ver perfil completo de aprendizaje  <span></span></a>
+    </div>
     </section>  
     <section class="form__contact">
         <h1>¿Deseas contactarme?</h1>
         <form class="form__delay" action="/data-base/">
-            <label for="name">
+            <label for="name" class="name">
                 <span>Nombre</span>
                 <input type="text" name="name" id="name" autocomplete="name" required/>
             </label>
-            <label for="phone">
+            <label for="phone" class="phone">
                 <span>Teléfono</span>
                 <input type="number" name="phone" id="phone" autocomplete="phone" required/>
             </label>
-            <label for="email">
+            <label for="email" class="email">
                 <span>E-mail</span>
                 <input type="email" name="email" id="email" autocomplete="email" required/>
             </label>
-            <label for="message">
+            <label for="message" class="message">
                 <span>Mensaje</span>
                 <input class="input-message" name="message" type="text" id="message" autocomplete="message" required/>
             </label>
