@@ -44,6 +44,11 @@ body{
     left: 23px;
     justify-content: space-between;
 }
+.hero .background__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 
 .hero .line-button{
     width: 100%;
@@ -75,6 +80,7 @@ body{
     position: relative;
     width: 320px;
     top: -7.5rem;
+    left: calc( 50% - 190px );
 }
 
 .hero .title__description{
@@ -121,7 +127,8 @@ main{
 }
 
 .target__experience{
-    max-width: 288px;
+    min-width: 288px;
+    max-width: 462px;
     width: 90%;
     height: 311px;
     margin: 0 auto;
