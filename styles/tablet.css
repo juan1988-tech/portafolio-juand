@@ -475,6 +475,7 @@ main{
     display: flex;
     background: #D4D3D3;
 }
+
 .profile__student-container .learning__profile{
     color: var(--purple-dark-title);
     font-size: 1.4rem;
