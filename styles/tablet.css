@@ -434,39 +434,39 @@ main{
 }
 
 .react-icon-item{
-    background-image: url('./assets/images/react-logo.png'); 
+    background-image: url('./assets/images/react-logo.svg'); 
 }
 
 .sass-icon-item{
-    background-image: url('./assets/images/sass-logo.png');
+    background-image: url('./assets/images/sass-logo.svg');
 }
 
 .js-icon-item{
-    background-image: url('./assets/images/js-logo.png');
+    background-image: url('./assets/images/js-logo.svg');
 }
 
 .github-icon-item{
-    background-image: url('./assets/images/github-icon.png');
+    background-image: url('./assets/images/github-icon.svg');
 }
 
 .html-css-icon-item{
-    background-image: url('./assets/images/html-css-icon.png');
+    background-image: url('./assets/images/html-css-icon.svg');
 }
 
 .adobexd-logo-item{
-    background-image: url('./assets/images/adobexd-logo.png');
+    background-image: url('./assets/images/adobexd-logo.svg');
 }
 
 .figma-icon{
-    background-image: url('./assets/images/figma-logo.png');
+    background-image: url('./assets/images/figma-logo.svg');
 }
 
 .design-thinking-icon{
-    background-image: url('./assets/images/design-thinking.png');
+    background-image: url('./assets/images/design-thinking.svg');
 }
 
 .uxui-icon{
-    background-image: url('./assets/images/uxui-logo.png');
+    background-image: url('./assets/images/uxui-logo.svg');
 }
 
 .profile__student-container{
@@ -540,6 +540,7 @@ main{
     flex-direction: column;
     margin: 0 auto;
 }
+
 .name{
     grid-area: name;
 }
@@ -656,6 +657,10 @@ footer h1 + h2{
 
 .instagram__link{
     background-image: url('./assets/icons/instagram-white-icon.svg');
+}
+
+.experience__description-layout .pen-design-logo{
+    display: none;    
 }
 
 .location__data{

@@ -319,7 +319,8 @@ main{
 .github-icon-item,
 .adobexd-logo-item,
 .figma-icon,
-.uxui-icon{
+.uxui-icon,
+.photoshop-logo{
     width: 150px;
     height: 150px;
     background-repeat: no-repeat;
@@ -366,6 +367,10 @@ main{
     background-image: url('./assets/images/uxui-logo.svg');
 }
 
+.photoshop-logo{
+    background-image: url('./assets/images/photoshop-logo.svg');    
+}
+
 .profile__student-container .learning__profile:link{
     text-decoration: none;
 }
@@ -375,17 +380,18 @@ main{
     height: 60px;
     display: flex;
     background: #D4D3D3;
+    justify-content: flex-end;
 }
 
 .profile__student-container .learning__profile{
     color: var(--purple-dark-title);
     font-size: 1.4rem;
     justify-self: left;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     display: inline-flex;
-    margin-left: 2rem;
-    width: 100%s;
+    width: 100%;
+    margin-right: 7.5rem;
 }
 
 .profile__student-container .learning__profile:link{
@@ -402,3 +408,102 @@ main{
     margin-left: .5rem;
 }
 
+.form__contact{
+    width: 100vw;
+    height: 44rem;
+    background-color: var(--backgroun-blue-form);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__contact h1, footer h1{
+    font-weight: 400;
+    font-size: 3.2rem;
+    padding: 1rem 0;
+    color: var(--yellow-fonts);
+}
+
+.form__contact .form__delay{
+    width: 80%;
+    height: auto;
+    display: grid;
+    padding: 2rem 3rem;
+    grid-gap: 2rem;
+    justify-items: center;
+    position: relative;
+    grid-template: repeat(4, 83px)/repeat(2, 1fr);
+    grid-template-areas: "name phone"
+                         "email email"
+                         "message message"
+                         ". button";
+}
+
+.form__contact label{
+    font-weight: 700;
+    font-size: 2rem;
+    width: 100%;        
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-self: center;
+}
+
+.name{
+    grid-area: name;
+}
+
+.phone{
+    grid-area: phone;
+}
+
+.email{
+    grid-area: email;
+}
+
+.message{
+    grid-area: message;
+}
+
+
+.form__contact span{
+    padding: 1rem 0;
+}
+
+.form__contact input, .input-message{
+    background:#1D275C;
+    border: none;
+    font-family: 'Play',sans-serif;
+    color: #fff;
+    font-weight: 400;
+    height: 3.5rem;
+    justify-self: center;
+    padding: 1rem 0;
+}
+
+
+.form__contact input:visited
+, .input-message:visited{
+    background: #1D275C;
+}
+
+.form__contact .form__button{
+    margin-top: 1.6rem;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    padding: .8rem;
+    border: 1px solid #fff; 
+    border-radius: 1rem;
+    height: 4rem;
+    width: 176px;
+    align-self: flex-end;
+    font-family: 'Play',sans-serif;
+    position: absolute;
+    top: 246px;
+    left: 570px;
+}
