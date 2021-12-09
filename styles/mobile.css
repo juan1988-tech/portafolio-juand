@@ -128,8 +128,7 @@ main{
 
 .target__experience{
     min-width: 288px;
-    max-width: 462px;
-    width: 90%;
+    width: 288px;
     height: 311px;
     margin: 0 auto;
     background-image: url('./assets/images/thinkigrow-image.jpg');
