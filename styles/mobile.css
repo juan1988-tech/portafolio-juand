@@ -44,6 +44,23 @@ body{
     left: 23px;
     justify-content: space-between;
 }
+
+.change .first{
+    transform: rotate(-45deg) translate(-6px, 1px);
+    position: absolute;
+    transition: .4s ease-out;
+}
+
+.change .second{
+    opacity: 0;
+}
+
+.change .third{
+    transform: rotate(45deg) translate(2px, 5px);
+    position: absolute;
+    transition: .4s ease-out;
+}
+
 .hero .background__container{
     width: 100%;
     display: flex;
@@ -55,6 +72,7 @@ body{
     height: 5px;
     background: var(--light-blue);
     border-radius: 3px;
+    display: block;
 }
 
 .hero .title-developer{

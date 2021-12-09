@@ -15,10 +15,12 @@
 </head>
 <body>
     <section class="hero">
-        <a href="#" class="burguer-button">
-            <span class="line-button first"></span>
-            <span class="line-button second"></span>
-            <span class="line-button third"></span>
+        <a>
+            <div  id="burguer_button" class="burguer-button" onclick="burguerButton(this)">
+                <div class="line-button first" id="first_line"></div>
+                <div class="line-button second" id="second_line"></div>
+                <div class="line-button third" id="third_line"></div>
+            </div>
         </a>
         <h1 class="title-developer">Juan David Franco</h1>
         <h3 class="title__advice">Desarrollador web y diseñador de interfaces</h3>
@@ -140,5 +142,6 @@
             <p><span class="location__icon"></span> Bogotá, Colombia</p>
         </section>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

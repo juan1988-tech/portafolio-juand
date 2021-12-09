@@ -45,6 +45,7 @@ body{
     top: 26px;
     left: 23px;
     justify-content: space-between;
+    transition: 0.4s ease-out; 
 }
 
 .hero .background__container{
@@ -58,6 +59,9 @@ body{
     background: var(--light-blue);
     border-radius: 3px;
 }
+
+
+
 
 .hero .title-developer{
     font-size: 4rem;
