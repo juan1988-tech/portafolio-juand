@@ -43,6 +43,7 @@ body{
     top: 26px;
     left: 23px;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .change .first{
@@ -61,11 +62,95 @@ body{
     transition: .4s ease-out;
 }
 
+.header__burguer{
+    width:100vw;
+    height: 100vh;
+    background-color: #24041B;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: absolute;
+    top: -100%;
+    z-index: 1;
+}
+
+.change__header .header-change{
+    transform: translateY(100vh);
+    transition: transform 700ms;
+}
+
+
+.header__burguer h1{
+    color: var(--yellow-fonts);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: right;
+}
+
+.header__burguer h1 + h2{
+    color:#5CD7E8;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.header__burguer ul{
+    list-style: none;
+}
+
+.header__burguer a, 
+.header__burguer a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    display: inline-flex;
+    align-self: center;
+}
+
+.header__burguer .perfil__link span,
+.header__burguer .experience__link span,
+.header__burguer .knowledge__link span,
+.header__burguer .contact__link span{   
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.header__burguer .header__burguer-list{
+    height: 26.1rem;
+    width: 20.1rem;
+    display: flex;
+    margin-top: 9.1rem;
+    margin-left: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__burguer .perfil__link span:nth-child(1){
+    background-image: url('./assets/icons/user-cicrle.svg');
+}
+
+.header__burguer .experience__link span:nth-child(1){
+    background-image: url('./assets/icons/paper_fill.svg');
+}
+
+.header__burguer .knowledge__link span:nth-child(1){
+    background-image: url('./assets/icons/square-academic-cap.svg');
+}
+
+.header__burguer .contact__link span:nth-child(1){
+    background-image: url('./assets/icons/phone.svg');
+}
+
 .hero .background__container{
     width: 100%;
     display: flex;
     align-items: center;
 }
+
 
 .hero .line-button{
     width: 100%;
