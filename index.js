@@ -1,5 +1,12 @@
 let burguer_button = document.getElementById('burguer_button');
 let headerBurguer = document.getElementById('header__burguer');
+const listLink = document.querySelectorAll('.header__burguer-list a');
+const arrayListLink = [...listLink]
+console.log(arrayListLink);
+
+function occultDelay(){
+    alert('saludos');
+}
 
 function burguerButton(x){
     burguer_button.classList.toggle('change_burguer-button');
@@ -8,8 +15,16 @@ function burguerButton(x){
     if(burguer_button.classList.toggle('change_burguer-button') !== false){
         header__burguer.style.transform = `translateY(100vh)`;
         header__burguer.style.transition = 'transform 700ms'; 
+        header__burguer.style.position = 'absolute';
+
     }else{
         header__burguer.style.transform = `translateY(0vh)`;
         header__burguer.style.transition = 'transform 700ms';
     }
+}
+
+
+function occultDelay(){
+    header__burguer.style.transform = `translateY(0vh)`;
+    header__burguer.style.transition = 'transform 700ms';
 }

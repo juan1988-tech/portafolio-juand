@@ -18,16 +18,16 @@
         <h2>Desarrollador web y diseñador de interfaces</h2>
         <ul class="header__burguer-list">
             <li>
-                <a href="#" class="perfil__link"><span></span> Perfil</a>        
+                <a href="#perfil__link" class="perfil__link" onclick="occultDelay()"><span></span> Perfil</a>        
             </li>
             <li>
-                <a href="#" class="experience__link"><span></span> Experiencia</a>
+                <a href="#experience__link" class="experience__link" onclick="occultDelay()"><span></span> Experiencia</a>
             </li>
             <li>
-                <a href="#" class="knowledge__link"><span></span> Conocimientos</a>
+                <a href="#knowledge__link" class="knowledge__link" onclick="occultDelay()"><span></span> Conocimientos</a>
             </li>
             <li>
-                <a href="#" class="contact__link"><span></span> Contacto</a>
+                <a href="#contact__link" class="contact__link" onclick="occultDelay()"><span></span> Contacto</a>
             </li>
         </ul>
     </header>
@@ -48,7 +48,7 @@
         <p class="title__description">Hola, soy Juan David Franco, creo aplicaciones web, y soy diseñador de interfaces</p>
     </section>
     <main>
-    <section class="job__description-container">
+    <section class="job__description-container" id="perfil__link">
         <article class="job__description">
             <h1 class="job__description-title">Desarrollador web</h1>
             <img class="job__description-image" alt="foto-desarrollador" src="./styles/assets/images/photo-development.png"/>
@@ -60,7 +60,7 @@
             <p>Soy diseñador de interfaces, aplico los conocimientos de design thinking y ux ui, para diseñar productos tecnológicos innovadores</p>
         </article>
     </section>
-    <section class="experience__delay">
+    <section class="experience__delay" id="experience__link">
         <h1 class="job__description-title experience">Experiencia y proyectos destacados</h1>
             <a href="https://thinkigrow.com/" target="_blank" class="thinkigrow__delay">
                 <section class="target__experience thinkigrow">
@@ -94,7 +94,7 @@
     <div class="container__description-title">
         <h1 class="job__description-title">Conocimientos</h1>
     </div>  
-    <section class="knowledge__section">
+    <section class="knowledge__section" id="knowledge__link">
             <div class="knowledge__table">
                 <div class="knowledge__table-item react-icon-item"></div>
                 <div class="knowledge__table-item sass-icon-item"></div>
@@ -136,7 +136,7 @@
         </form>
     </section>
     </main>
-    <footer>
+    <footer id="contact__link">
         <h1>Juan David Franco</h1>
         <h2>Desarrollador web y diseñador de interfacess</h2>
         <section class="social__media-delay">
