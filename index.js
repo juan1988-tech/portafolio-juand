@@ -1,12 +1,5 @@
 let burguer_button = document.getElementById('burguer_button');
 let headerBurguer = document.getElementById('header__burguer');
-const listLink = document.querySelectorAll('.header__burguer-list a');
-const arrayListLink = [...listLink]
-console.log(arrayListLink);
-
-function occultDelay(){
-    alert('saludos');
-}
 
 function burguerButton(x){
     burguer_button.classList.toggle('change_burguer-button');

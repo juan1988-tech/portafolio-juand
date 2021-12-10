@@ -1,30 +1,3 @@
-:root{
-    --light-blue: #B1EEF2;
-    --background-blue: #050817;
-    --light-font-gray: #E4D9D9;
-    --background-gray: #E2E2E2;
-    --yellow-fonts: #FAF200;
-    --purple-dark-title: #24041B;
-    --dark-grey-font: #353333;
-    --backgroun-blue-form: #090F2E;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: .625rem;
-    font-family: 'Play', sans-serif;
-}
-
-body{
-    background: var(--background-gray);
-}
-
-
 .hero{
     width: 100vw;
     min-width: 426px;
@@ -63,14 +36,34 @@ body{
 .header__burguer{
     width:100vw;
     height: 100vh;
-    background-color: #24041B;
+    background-color: var(--purple-dark-title);
     color: #fff;
     display: flex;
     flex-direction: column;
 }
 
+.header__burguer .header__burguer-list{
+    height: 26.1rem;
+    width: 20.1rem;
+    display: flex;
+    margin-top: 3.1rem;
+    margin-left: 15rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.header__burguer h1{
+    font-size: 3.2rem;
+    text-align: right;
+    margin-bottom: 1rem;
+}
 
+.header__burguer h1 + h2{
+    text-align: right;
+    font-size: 1.6rem;
+    width: 321px;
+    margin-left: auto;
+}
 .hero .title-developer{
     font-size: 4rem;
     color: var(--yellow-fonts);
@@ -78,6 +71,22 @@ body{
     text-align: center;
     margin: 0 auto;
     margin-top: 51px;
+}
+
+.header__burguer a, 
+.header__burguer a:visited {
+    font-size: 2.4rem;
+    display: inline-flex;
+    align-self: center;
+    height: 3.4rem;
+}
+
+.header__burguer .perfil__link span,
+.header__burguer .experience__link span,
+.header__burguer .knowledge__link span,
+.header__burguer .contact__link span{   
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 .hero .title__advice{
@@ -195,53 +204,6 @@ main{
     grid-area: experience-description-layout;
 }
 
-.experience__description-layout h1{
-    font-size: 2rem;
-    color:var(--yellow-fonts);
-    font-weight: 700;
-}
-
-.experience__description-layout p{
-    font-size: 1.4rem;
-    color: #fff;
-    font-weight: 400;
-    margin:.8rem 0;
-}
-
-.experience__description-layout h3{
-    color:var(--yellow-fonts);
-    font-weight: 700;
-    font-size: 1.6rem;
-}
-
-.experience__description-layout{
-    width: 100%;
-    height: 55%;
-    position: absolute;
-    bottom: 0;
-    background: var(--background-blue);
-    padding: 1.6rem;
-}
-
-.experience__description-layout h1{
-    font-size: 2rem;
-    color:var(--yellow-fonts);
-    font-weight: 700;
-}
-
-.experience__description-layout p{
-    font-size: 1.4rem;
-    color: #fff;
-    font-weight: 400;
-    margin:.8rem 0;
-}
-
-.experience__description-layout h3{
-    color:var(--yellow-fonts);
-    font-weight: 700;
-    font-size: 1.6rem;
-}
-
 .knowledge__icons{
     display: inline-flex;
     height: 28px;
@@ -256,6 +218,10 @@ main{
     padding-right: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.experience__description-layout  .sass-icon{
+    background-image: url('./assets/images/sass-logo.svg');
 }
 
 .experience__description-layout .react-icon{
@@ -285,51 +251,14 @@ main{
 .knowledge__section{
     width: 100%;
     background: #D4D3D3;
-    height: 395px;
+    height:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-}
-.knowledge__icons{
-    display: inline-flex;
-    height: 28px;
-    width: 50%;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-.experience__description-layout .knowledge__icon-tag{
-    width: 2.6rem;
-    height: 2.6rem;
-    border-radius: 50%;
-    padding-right: 1rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.experience__description-layout .react-icon{
-    background-image: url('./assets/icons/react-icon.svg');
-}
-
-.experience__description-layout .figma-icon{
-    background-image: url('./assets/icons/figma-icon.svg');
-}
-
-.experience__description-layout .design-thinking-icon{
-    background-image: url('./assets/icons/designthinking-icon.svg');
-}
-
-.experience__description-layout .html-css-icon{
-    background-image: url('./assets/icons/html-css-icon.svg');
-}
-
-.experience__description-layout .css-icon{
-    background-image: url('./assets/icons/css-icon.svg');
-}
-
-.batata-icons{
-    width: 30%;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .experience__description-layout{
@@ -360,13 +289,6 @@ main{
     font-size: 1.6rem;
 }
 
-.knowledge__icons{
-    display: inline-flex;
-    height: 28px;
-    width: 50%;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
 .experience__description-layout .knowledge__icon-tag{
     width: 2.6rem;
     height: 2.6rem;
@@ -376,38 +298,8 @@ main{
     background-repeat: no-repeat;
 }
 
-.experience__description-layout .react-icon{
-    background-image: url('./assets/icons/react-icon.svg');
-}
-
-.experience__description-layout .figma-icon{
-    background-image: url('./assets/icons/figma-icon.svg');
-}
-
-.experience__description-layout .design-thinking-icon{
-    background-image: url('./assets/icons/designthinking-icon.svg');
-}
-
-.experience__description-layout .html-css-icon{
-    background-image: url('./assets/icons/html-css-icon.svg');
-}
-
-.experience__description-layout .css-icon{
-    background-image: url('./assets/icons/css-icon.svg');
-}
-
 .batata-icons{
     width: 30%;
-}
-
-.knowledge__section{
-    background: #D4D3D3;
-    display: flex;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    margin: 0;
-    height: auto;
 }
 
 .container__description-title{
@@ -431,7 +323,6 @@ main{
     justify-content: space-around;
     position: relative;
     right: -29.5rem;
-    top: 6rem;
     align-content: none;
 }
 
