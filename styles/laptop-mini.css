@@ -63,6 +63,9 @@ body{
     border-radius: 3px;
 }
 
+.header__burguer{
+    top: -110%;
+}
 .hero .title-developer{
     font-size: 4rem;
     color: var(--yellow-fonts);
@@ -595,6 +598,7 @@ footer h1 + h2{
     margin-top: 3.4rem;
     display: inline-flex;
     justify-content: space-around;
+    width: auto;
 }
 
 .location__data span{
@@ -603,7 +607,8 @@ footer h1 + h2{
     display: inline-block;
     margin-right: 2rem;
   }
-  .location__data .cellphone__icon{
+
+.location__data .cellphone__icon{
     background-image: url('./assets/icons/cellphone-icon.svg'); 
     height: 2.3rem;
     width: 2.7rem;

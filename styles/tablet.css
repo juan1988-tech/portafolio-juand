@@ -40,6 +40,8 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: -100%;
 }
 
 .header__burguer .header__burguer-list{
@@ -55,6 +57,8 @@
 .header__burguer h1{
     font-size: 3.2rem;
     text-align: right;
+    margin-top: 3rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -62,6 +66,7 @@
     text-align: right;
     font-size: 1.6rem;
     width: 321px;
+    margin-right: 1rem;
     margin-left: auto;
 }
 .hero .title-developer{
